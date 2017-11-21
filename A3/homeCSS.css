@@ -1,0 +1,297 @@
+
+@media(min-width:768px){
+
+body{
+	background-image: url(bench.jpeg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size cover;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 30px;
+}
+
+#eventManager
+{
+	position: absolute;
+	bottom: -35%;
+	float:left;
+}
+
+p{
+	font-size: 100%;
+	color: black;
+}
+
+
+h1{
+	text-align: center;
+}
+
+
+h1 span{
+	background-color: rgba(200, 200, 200, .8);
+	padding: 8px 8px 8px 8px;
+}
+
+
+ul{
+	font-size: 100%;
+	color: black;
+}
+
+
+div{
+	font-size: 110%;
+	color: black;
+}
+
+
+.welcome{
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+.text{
+	width: 25%;
+	padding: 10px 30px 10px 10px;
+}
+
+
+.picture{
+	text-align: left;
+	float: left;
+	flex: 1;
+	padding: 10px 10px 10px 10px;
+}
+
+
+.format{
+	display: flex;
+}
+
+.left{
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+	width: 45%;
+	height: 100%;
+	float: left;
+	flex: 1;
+	margin-right: 10%;
+	padding-left: 1%;
+}
+
+
+.right{
+	position: relative;
+	width: 45%;
+	margin-left: 10%;
+	padding-top: 0px;
+	display: flex;
+}
+
+
+.campus1{
+	float: left;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.campus2{
+	float: left;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 200px;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.campus3{
+	float: left;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 400px;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.text1{
+	width: 50%;
+	font-size: 100%;
+	padding: 10px 30px 10px 10px;
+}
+
+
+.picture1{
+	text-align: right;
+	flex: 1;
+	padding: 5px 5px 5px 5px;
+}
+
+
+.footer{
+	text-align: center;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+body{
+	background-image: url(bench.jpeg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size cover;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 30px;
+}
+
+
+#eventManager
+{
+	position: absolute;
+	bottom: -35%;
+	float:left;
+}
+
+p{
+	font-size: 100%;
+	color: black;
+}
+
+
+h1{
+	text-align: center;
+}
+
+
+h1 span{
+	background-color: rgba(200, 200, 200, .8);
+	padding: 8px 8px 8px 8px;
+}
+
+
+ul{
+	font-size: 100%;
+	color: black;
+}
+
+
+div{
+	font-size: 110%;
+	color: black;
+}
+
+
+.welcome{
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+	width: 100%;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+.text{
+	width: 25%;
+	padding: 10px 30px 10px 10px;
+}
+
+
+.picture{
+	text-align: left;
+	flex: 1;
+	padding: 10px 10px 10px 10px;
+}
+
+
+.left{
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+	float: left;
+	width: 100%;
+	margin-right: 10%;
+	padding-left: 1%;
+}
+
+
+.right{
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-top: 0px;
+	display: flex;
+}
+
+
+.campus1{
+	float: left;
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	display: flex;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.campus2{
+	float: left;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 230px;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.campus3{
+	float: left;
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 430px;
+	background-color: white;
+	background-color: rgba(200, 200, 200, .8);
+}
+
+
+.text1{
+	width: 50%;
+	font-size: 100%;
+	padding: 10px 30px 10px 10px;
+}
+
+
+.picture1{
+	text-align: right;
+	flex: 1;
+	padding: 5px 5px 5px 5px;
+}
+
+
+.footer{
+	visibility: hidden;
+}
+}

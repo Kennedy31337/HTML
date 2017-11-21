@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" href="otherCSS.css">
+	 <link rel="stylesheet" href="myTopnav.css">
+</head>
+
+<body onload="sortTable()">
+<div class = "title">
+	<div class = "picture">
+	<img src="four.jpg" style="width:250px; height:150px;">
+	</div>
+	<div class = "text"> <h1> Balfield Campus </h1> </div>
+</div>
+<nav>
+<div class="topnav" id="myTopnav">
+	<a href="home.html">Home</a>
+	<a href="campus.html">Campus</a>
+	<a href="student.html">Student</a>
+	<a href="previousCourses.html">Previous Courses</a>
+</div>
+</nav>
+<hr>
+
+<h2>Course Catalogue</h2>
+
+<table id = "myTable">
+	<tr>
+		<th>Course Name & Number</th>
+		<th>Date Completed</th>
+
+	</tr>
+	<tr>
+		<td>Web Programming 1000</td>
+		<td>Fall 2014</td>
+	</tr>
+	<tr>
+		<td>C++ Programming 1001</td>
+		<td>Fall 2014</td>
+	</tr>
+	<tr>
+		<td>Java Programming 1005</td>
+		<td>Winter 2014</td>
+	</tr>
+	<tr>
+		<td>Python Programming 2000</td>
+		<td>Winter 2014</td>
+	</tr>
+	<tr>
+		<td>Computer Science Logic 2100</td>
+		<td>Fall 2016</td>
+	</tr>
+</table>
+
+
+
+
+</div>
+
+<script>
+function sortTable() {
+  var t, r, swap, i, x, y, shouldSwap;
+  t = document.getElementById("myTable");
+  swap = true;
+  while (swap) {
+    swap = false;
+    r = t.getElementsByTagName("TR");
+    for (i = 1; i < (r.length - 1); i++) {
+      shouldSwap = false;
+      x = r[i].getElementsByTagName("TD")[0];
+      y = r[i + 1].getElementsByTagName("TD")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwap= true;
+        break;
+      }
+    }
+    if (shouldSwap) {
+      r[i].parentNode.insertBefore(r[i + 1], r[i]);
+      swap = true;
+    }
+  }
+}
+
+
+</script>
+</body>
+
+</html>

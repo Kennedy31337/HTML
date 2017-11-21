@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link rel="stylesheet" href="otherCSS.css">
+</head>
+
+<body>
+<div class = "title">
+	<div class = "picture">
+	<img src="five.jpg" style="width:250px; height:150px;">
+	</div>
+	<div class = "text"> <h1> St. Claire Campus </h1> </div>
+</div>
+
+<h2>Course Catalogue</h2>
+ 
+<table id = "myTable">
+	<tr>
+		<th>Course Name & Number</th>
+		<th>Course Registration Number</th>
+
+	</tr>
+	<tr>
+		<td>Logic 2010</td>
+		<td>01110</td>
+	</tr>
+	<tr>
+		<td>Math 1000</td>
+		<td>01111</td>
+	</tr>
+	<tr>
+		<td>Math 1001</td>
+		<td>01112</td>
+	</tr>
+	<tr>
+		<td>Math 1090</td>
+		<td>01113</td>
+	</tr>
+	<tr>
+		<td>Math 2000</td>
+		<td>01114</td>
+	</tr>
+	<tr>
+		<td>Statistics 2050</td>
+		<td>01115</td>
+	</tr>
+</table>
+
+<h2>Course Registration</h2>
+
+<div class = "crn">
+	<p>Course Registration Number</p>
+	<input type="text" name= "courseRegistrationNumber">
+	<button name="Register" type="submit" value="crn">Register</button>
+	<br>
+</div>
+
+<div class = "crn">
+	<p>Add Course</p>
+	<input type="text" id="nameNum" placeholder="class name and number">
+	<input type="text" id="regNum" placeholder="registration number">
+	<button onclick="addCourse()">Add Course</button>
+	<p>Delete Course</p>
+	<input type="number" id="Jon_is_cool" min="1" max="10">
+	<button onclick="deleteCourse()">Delete</button>
+	
+</div>
+
+<script>
+function sortTable() {
+  var t, r, swap, i, x, y, shouldSwap;
+  t = document.getElementById("myTable");
+  swap = true;
+  while (swap) {
+    swap = false;
+    r = t.getElementsByTagName("TR");
+    for (i = 1; i < (r.length - 1); i++) {
+      shouldSwap = false;
+      x = r[i].getElementsByTagName("TD")[0];
+      y = r[i + 1].getElementsByTagName("TD")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwap= true;
+        break;
+      }
+    }
+    if (shouldSwap) {
+      r[i].parentNode.insertBefore(r[i + 1], r[i]);
+      swap = true;
+    }
+  }
+}
+function addCourse(){
+	var num = document.getElementById("nameNum").value;
+	var reg = document.getElementById("regNum").value;
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = num;
+    cell2.innerHTML = reg;
+	sortTable();
+}
+function deleteCourse(){
+	var ImTheBest = document.getElementById("Jon_is_cool").value;
+	document.getElementById("myTable").deleteRow(ImTheBest);
+}
+
+</script>
+</body>
+
+</html>
